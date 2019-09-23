@@ -48,6 +48,7 @@ Vous devez distinguer 3 rôles dans votre appli :
 - "3ème sprint : JWT pour la phase d'authentification / utiliser keyclock"
 
 <h2>Mardi</h2>
+
 **veille**
 
 **SPECIFICATIONS FONCTIONELLES -> POUR LES VISITEURS DU SITE, l'appli doit :**
@@ -63,6 +64,7 @@ Vous devez distinguer 3 rôles dans votre appli :
 		-> (nom, description, prix, promotion o/n, selection o/n, dispo o/n)
 
 <h2>Mercredi</h2>
+
 **veille**
 
 **SPECIFICATIONS FONCTIONELLES -> POUR LES ADMINISTRATEURS DU SITE, l'appli permet :**
@@ -78,6 +80,7 @@ Vous devez distinguer 3 rôles dans votre appli :
 - vous ne devez pas accepter les photos de plus de 2.5MB (back)
 
 <h2>Jeudi</h2>
+
 **veille**
 
 **SPECIFICATIONS FONCTIONELLES -> POUR LES UTILISATEURS donc authentifiés, l'appli doit :**
