@@ -54,13 +54,16 @@ Vous devez distinguer 3 rôles dans votre appli :
 **SPECIFICATIONS FONCTIONELLES -> POUR LES VISITEURS DU SITE, l'appli doit :**
 
 - afficher la liste des produits selectionnable (ou accessible) au niveau du back (page d'accueil ou home)
+		
 		-> afficher les photos de chaque produit, prévoir une photo de substitution
+		
 - afficher la liste des produits correspondant à une catégorie par le simple clic sur celle ci	
 - afficher le pointer vers la catégorie ou produit survolée avec la souris (pour clic)
 - afficher la liste des produits d'une catégorie cliqué
 - les catégories non selectionnés doivent apparaitre en grisées
 - afficher sous chaque produit des icones signifiant s'ils sont selectionnés, en promotion ou disponible
 - lorsqu'on clic sur une photo, afficher les informations détaillées sur le produit correspondant 
+
 		-> (nom, description, prix, promotion o/n, selection o/n, dispo o/n)
 
 <h2>Mercredi</h2>
@@ -72,8 +75,11 @@ Vous devez distinguer 3 rôles dans votre appli :
 - considérant ici, qu'ils ont déjà un compte, il faut proposer un formulaire d'authentification (côté front uniquement)
 - une fois authentifié, il doit le rester tant qu'il ne se déconnecte pas (stockage dans le local storage)
 - de changer la photo d'un produit par l'accès à l'explorateur de fichiers côté front :
+
 		-> cela provoquera l'envoi de la photo au niveau du back ou elle sera stocké
+
 		-> la nouvelle photo devra instantanément être affiché sur le front
+
 - l'admin peut acceder naturellement aux infos d'un produit mais en plus, il peut les modifier, ce qui met à jour le back...
 - les photos des produits seront stockés dans un dossier respectant ce chemin : "user.home" + /ecom/products
 - les photos des catégories seront dans : "user.home" + /ecom/categories
@@ -92,11 +98,16 @@ Vous devez distinguer 3 rôles dans votre appli :
 - afficher le contenu d'un caddy (id,liste des produits, quantité, prix(qté*prix produit), total caddy)
 - prévoir un bouton pour supprimer un ou plusieurs éléments de notre caddy
 - revenir à tout moment sur la liste des produits pour ajouter dans le caddy en cours
+		
 		-> si l'ajout concerne un produit déjà présent dans le caddy, il faut juste augmenter la quantité de celui-ci
 - passer une commande d'un caddy pour l'utilisateur ou une tierce personne :
+		
 		-> prévoir de remplir tous les champs de la fiche client : nom adresse tel email => NEXT
+		
 		-> afficher une fiche récapitulative de la commande avec toutes les infos : Client + N° cde + date cde + total
+		
 		-> une fois la commande validé, il faut la céer au niveau du back avec id, numéro de commande, date puis l'indiquer côté front instantanément
+		
 		-> passer à la phase paiement bien qu'elle soit fictive ici (pour l'ex, nous n'utiliserons pas de vraies plate forme de paiement en ligne)
 
 <h2>Vendredi</h2>
@@ -117,9 +128,9 @@ Vous devez distinguer 3 rôles dans votre appli :
 - Ne réinventez pas la roue, si le framework propose déjà des méthodes, utiliser les au lieu de refaire les choses
 - Vous travaillez en groupe de 3/4 dev et compte tenu des différentes fonctionnalités à développer en très peu de temps, la répartition des taches est incontournable aussi vous devez repérer les composants ou services à développer, en faire des users stories et les répartir entre vous sur un tableau de bord visible.
 - DOCUMENTER VOTRE CODE
-- Utiliser l'anglais pour les classes, interfces, attributs, composants...
+- Utiliser l'anglais pour les classes, interfaces, attributs, composants...
 - L'utilisation de Git impose de communiquer dans un groupe
-- Astuce ici : la partie back peut être développé par une seule personne, une fois lancé, les micro services seront accessibles 		uniquement sur son pc tel un serveur dédié au groupe, attention ici il faut gérer le cas ou le pc plante !!!
+- Astuce ici : la partie back peut être développé par une seule personne, une fois lancé, les micro services seront accessibles uniquement sur son pc tel un serveur dédié au groupe, attention ici il faut gérer le cas ou le pc plante !!!
 
 **PHASE DE TEST ET VALIDATION** (en prévision de la mise en prod)
 
@@ -130,13 +141,13 @@ Vous devez distinguer 3 rôles dans votre appli :
 
 **LE SAVIEZ VOUS ?**
 
----> NOTRE APPLI UTILISE LA SPECIFICATION JPA POUR LE MAPPING OBJET RELATIONNEL, SPRING UTILISE PAR DEFAUT HYBERNATE QUI EST UNE IMPLEMENTATION DE CELLE-CI MAIS EN REALITE ON PEUT EN UTILISER D'AUTRE DANS LA CONFIGURATION DE NOTRE APPLI...
+--> NOTRE APPLI UTILISE LA SPECIFICATION JPA POUR LE MAPPING OBJET RELATIONNEL, SPRING UTILISE PAR DEFAUT HYBERNATE QUI EST UNE IMPLEMENTATION DE CELLE-CI MAIS EN REALITE ON PEUT EN UTILISER D'AUTRE DANS LA CONFIGURATION DE NOTRE APPLI...
 
----> NOTRE APPLI UTILISE LA SPECIFICATION JAXRS POUR LES SERVICES WEB DE TYPE RESTFUL, JERSEY EST UNE IMPLEMENTATION DE CELLE-CI...
+--> NOTRE APPLI UTILISE LA SPECIFICATION JAXRS POUR LES SERVICES WEB DE TYPE RESTFUL, JERSEY EST UNE IMPLEMENTATION DE CELLE-CI...
 
----> NB CONCERNANT LE DEPLOIEMENT : Si votre hébergeur a déjà un serveur d'appli tel "Tomcat", vous devez générer un war, s'il n'en dispose pas (ex : serveur dédié), le jar est indispensable, dans ce cas, en démarrant l'appli, celle-ci démarre tomcat...
+--> NB CONCERNANT LE DEPLOIEMENT : Si votre hébergeur a déjà un serveur d'appli tel "Tomcat", vous devez générer un war, s'il n'en dispose pas (ex : serveur dédié), le jar est indispensable, dans ce cas, en démarrant l'appli, celle-ci démarre tomcat...
 
----> S'AGISSANT DE LA SECURITE, il y a 2 modes :
+--> S'AGISSANT DE LA SECURITE, il y a 2 modes :
 	- Sécurité basée sur les sessions et le cookies (stateful) / une session est stockée côté serveur qui envoi un cookie côté client
 	- s'agissant des applis basées sur des api rest, on utilise JWT (stateless), on envoi username + pwd, on reçoit un token sécurisé
 
