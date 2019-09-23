@@ -2,19 +2,27 @@ Angular/2ème Sprint
 ===
 
 <h2>Lundi</h2>
+
 **Retour Alternance**
+
 **Nouvelles consignes**
+
 **MasterClass Synthèse Angular**
+
 **Point sur le 1er Sprint**
+
 **Constitution des groupes pour le 2ème Sprint**
+
 **Mise en oeuvre collective d'un process de résolution de blocage**
 
 **before starting !**
+
 En prévision de l'évaluation d'octobre et de manière générale, afin de vous habituer à travailler dans des conditions réelles, vous aurez des spécifications fonctionnelles et techniques ici.
 
 A vous de faire le job en équipe (scrum, wireframe, modélisation, dev, test, git...)
 
 **SPECIFICATION GENERALE**
+
 Dans le prolongement du premier sprint, vous devez dans ce second sprint, réaliser une application de vente en ligne complète qui s'appuie sur vos acquis précédent mais il faudra, cette fois-ci, refaire en groupe un projet complet, back + front en répondant aux spécifications fonctionnelles ci-dessous.
 
 L'appli propose d'afficher tous les produits classés par catégories accessibles via notre api, d'en selectionner un ou plusieurs pour constituer un caddy avec la possibilitée de passer commande à tout moment à condition d'être aunthentifié, enfin de "régler en ligne".
@@ -25,6 +33,7 @@ Vous devez distinguer 3 rôles dans votre appli :
 - administrateur qui peut changer les photos des produits, modifier les infos.
 
 **SPECIFICATIONS TECHNIQUES / CONCEPTION** 
+
 - Spring au niveau du back (java 8, api Rest)
 - Vous pourrez dans un premier temps utiliser une bdd virtuelle mais il faudra in fine utiliser un sgbd type mysql ou mariadb une fois arrivé à la phase commande.
 - Comme à notre habitude, ne réinvontons pas la roue aussi utiliser Spring data pour gérer vos entités Jpa une fois crées puis spring data rest pour la gestion des web services associés
@@ -42,6 +51,7 @@ Vous devez distinguer 3 rôles dans votre appli :
 **veille**
 
 **SPECIFICATIONS FONCTIONELLES -> POUR LES VISITEURS DU SITE, l'appli doit :**
+
 - afficher la liste des produits selectionnable (ou accessible) au niveau du back (page d'accueil ou home)
 		-> afficher les photos de chaque produit, prévoir une photo de substitution
 - afficher la liste des produits correspondant à une catégorie par le simple clic sur celle ci	
@@ -56,6 +66,7 @@ Vous devez distinguer 3 rôles dans votre appli :
 **veille**
 
 **SPECIFICATIONS FONCTIONELLES -> POUR LES ADMINISTRATEURS DU SITE, l'appli permet :**
+
 - considérant ici, qu'ils ont déjà un compte, il faut proposer un formulaire d'authentification (côté front uniquement)
 - une fois authentifié, il doit le rester tant qu'il ne se déconnecte pas (stockage dans le local storage)
 - de changer la photo d'un produit par l'accès à l'explorateur de fichiers côté front :
@@ -70,6 +81,7 @@ Vous devez distinguer 3 rôles dans votre appli :
 **veille**
 
 **SPECIFICATIONS FONCTIONELLES -> POUR LES UTILISATEURS donc authentifiés, l'appli doit :**
+
 - considérant ici, qu'ils ont déjà un compte, il faut proposer un formulaire d'authentification (côté front uniquement)
 	"la création d'un compte utilisateur inexistant pourra faire l'objet d'un 3ème sprint (à gérer en base côté back]"
 - une fois authentifié, il doit le rester tant qu'il ne se déconnecte pas (stockage dans le local storage)
@@ -85,9 +97,11 @@ Vous devez distinguer 3 rôles dans votre appli :
 		-> passer à la phase paiement bien qu'elle soit fictive ici (pour l'ex, nous n'utiliserons pas de vraies plate forme de paiement en ligne)
 
 <h2>Vendredi</h2>
+
 **Demo du projet de chaque groupe**
 
 **Préparation du Titre :**
+
 - Referentiel de certification 
 - http://www.dossierprofessionnel.fr/
 
@@ -96,6 +110,7 @@ Vous devez distinguer 3 rôles dans votre appli :
 [YouTube](https://youtu.be/xpMGCZw0UBA)
 
 **DERNIERES CONSIGNES :**
+
 - Ne réinventez pas la roue, si le framework propose déjà des méthodes, utiliser les au lieu de refaire les choses
 - Vous travaillez en groupe de 3/4 dev et compte tenu des différentes fonctionnalités à développer en très peu de temps, la répartition des taches est incontournable aussi vous devez repérer les composants ou services à développer, en faire des users stories et les répartir entre vous sur un tableau de bord visible.
 - DOCUMENTER VOTRE CODE
@@ -103,12 +118,14 @@ Vous devez distinguer 3 rôles dans votre appli :
 - Astuce ici : la partie back peut être développé par une seule personne, une fois lancé, les micro services seront accessibles 		uniquement sur son pc tel un serveur dédié au groupe, attention ici il faut gérer le cas ou le pc plante !!!
 
 **PHASE DE TEST ET VALIDATION** (en prévision de la mise en prod)
+
 - prévoir des tests unitaires pour chaque composant
 - finaliser les tests d'intégration
 - il s'agit dans cette phase de vérifier si l'ensemble des fonctionnalités sont bien présente dans les spéc
 - il faudra vérifier les autres chemins de nav et y apporter des solutions
 
 **LE SAVIEZ VOUS ?**
+
 ---> NOTRE APPLI UTILISE LA SPECIFICATION JPA POUR LE MAPPING OBJET RELATIONNEL, SPRING UTILISE PAR DEFAUT HYBERNATE QUI EST UNE IMPLEMENTATION DE CELLE-CI MAIS EN REALITE ON PEUT EN UTILISER D'AUTRE DANS LA CONFIGURATION DE NOTRE APPLI...
 
 ---> NOTRE APPLI UTILISE LA SPECIFICATION JAXRS POUR LES SERVICES WEB DE TYPE RESTFUL, JERSEY EST UNE IMPLEMENTATION DE CELLE-CI...
@@ -121,4 +138,5 @@ Vous devez distinguer 3 rôles dans votre appli :
 
 
 **WHAT ABOUT THE FUTURE ?**
+
 NOUS VERRONS PROCHAINEMENT LES NOTIONS DE DEPLOIEMENT, SECURITE, PERFORMANCE et ROBUSTESSE d'une appli web mais avant tout, une pause appli mobile après l'éval d'octobre !
