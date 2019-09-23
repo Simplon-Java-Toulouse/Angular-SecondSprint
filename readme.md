@@ -117,6 +117,7 @@ Vous devez distinguer 3 rôles dans votre appli :
 - Ne réinventez pas la roue, si le framework propose déjà des méthodes, utiliser les au lieu de refaire les choses
 - Vous travaillez en groupe de 3/4 dev et compte tenu des différentes fonctionnalités à développer en très peu de temps, la répartition des taches est incontournable aussi vous devez repérer les composants ou services à développer, en faire des users stories et les répartir entre vous sur un tableau de bord visible.
 - DOCUMENTER VOTRE CODE
+- Utiliser l'anglais pour les classes, interfces, attributs, composants...
 - L'utilisation de Git impose de communiquer dans un groupe
 - Astuce ici : la partie back peut être développé par une seule personne, une fois lancé, les micro services seront accessibles 		uniquement sur son pc tel un serveur dédié au groupe, attention ici il faut gérer le cas ou le pc plante !!!
 
